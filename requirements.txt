@@ -1,0 +1,8 @@
+polars
+pathlib2
+pytz
+torch
+numpy
+pandas
+plotly
+colorama
