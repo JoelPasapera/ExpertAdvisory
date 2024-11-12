@@ -6,7 +6,7 @@ ExpertAdvisory is a backtesting tool designed for traders and financial analysts
 - Visual Analysis**: Includes tools to visualise backtesting results using Plotly.
 - Efficient Data Management**: Uses Polars for efficient handling of large volumes of CSV data.
 ## Installation
-Instructions on how to install the necessary dependencies.
+Instructions on how to install the necessary dependencies. Do this: pip install -r requirements.txt
 ## Usage
 Examples on how to use the script for backtesting.
 ## Contributions
