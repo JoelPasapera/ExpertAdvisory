@@ -3,7 +3,7 @@ ExpertAdvisory is a backtesting tool designed for traders and financial analysts
 ## Features
 - **Fast Processing**: Performs 14-year backtesting in 30 seconds using polars.
 - **Multi-Strategy Support**: Allows you to define and test a variety of trading strategies.
-- **Visual Analysis**: Includes tools to visualise backtesting results using Plotly and Polars. This by means of a profitability chart in pn and the trading log in a csv file.
+- **Visual Analysis**: Includes tools to visualise backtesting results using Plotly and Polars.
 - **Efficient Data Management**: Uses Polars for efficient handling of large volumes of CSV data.
 ## Installation
 Instructions on how to install the necessary dependencies. Do this: pip install -r requirements.txt
