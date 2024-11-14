@@ -1,5 +1,5 @@
 # ExpertAdvisory
-ExpertAdvisory is a backtesting tool designed for traders and financial analysts looking to evaluate trading strategies using historical data quickly and efficiently. This project uses Python along with advanced libraries such as Polars and PyTorch to achieve execution times in seconds.
+ExpertAdvisory is a backtesting tool intended for traders who want to evaluate scalping and intraday trading strategies using historical data quickly and efficiently. This project utilizes Python and advanced libraries such as Polars and PyTorch to achieve execution times in just a few seconds.
 ## Features
 ### Fast Processing:
 - Performs 14-year backtesting in 30 seconds using polars.
