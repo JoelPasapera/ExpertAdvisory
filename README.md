@@ -10,7 +10,9 @@ ExpertAdvisory is a backtesting tool intended for traders who want to evaluate s
 ### Efficient Data Management:
 - Uses Polars for efficient handling of large volumes of CSV data.
 ## Installation
-Instructions on how to install the necessary dependencies. Do this: pip install -r requirements.txt
+1. Instructions on how to install the necessary dependencies. Do this: pip install -r requirements.txt
+2. Download the csv file https://drive.google.com/file/d/1eOcxFOqMeQjEqqXu-BibLyycKAQnjY5k/view?usp=sharing 
+3. Make sure the csv file and the python script are in the same folder. You only need those 2 files. 
 ## Usage
 Examples on how to use the script for backtesting in the following video https://www.youtube.com/watch?v=6wFukUeQCcg&ab_channel=JoelPasapera 
 ## Limitations
