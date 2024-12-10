@@ -536,13 +536,15 @@ class BackTesting:
         """
         # declare variables
         entry_time = parameters["entry_time"]
-        max_v = parameters["max"]
-        min_v = parameters["min"]
-        date_max = parameters["Date_max"]
+        max_v = parameters["min"]
+        min_v = parameters["max"]
+        date_max = parameters["Date"]
         # list for storing the data frames of one row
         data_frames = []
         # Select only the necessary columns
-        df_1m_limits = df_1m.select(["Date", "High", "Low"])
+        df_1m_limits = df_1m.select(["Date_max", "High", "Low"])
+        # Date max is rewrite to avoid repetitions
+        df_1m_limits = df1_1m.select(["Date_max])
         # loop to return the closing date of the trade
         for entry_time_i, max_i, min_i, date_max_i in zip(
             entry_time, max_v, min_v, date_max
