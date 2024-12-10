@@ -75,6 +75,7 @@ class CSVProcessor:
             "High": pl.Float32,
             "Low": pl.Float32,
             "Close": pl.Float32,
+            "Date_max": pl.String,
         }
         # Define the main data frame with all the history data
         self.df_1m = None
@@ -150,11 +151,11 @@ class CSVProcessor:
             # rename columns
             df = df.rename(
                 {
-                    "column_1": "Date",
-                    "column_3": "Open",
-                    "column_4": "High",
-                    "column_5": "Low",
-                    "column_6": "Close",
+                    "column_0": "Date",
+                    "column_1": "Open",
+                    "column_2": "High",
+                    "column_3": "Low",
+                    "column_7": "Close",
                 }
             )
             # convert the strings dates to right format
@@ -257,9 +258,9 @@ class CSVProcessor:
                 pl.col("Date").dt.to_string("%Y-%m-%d %H:%M:%S").alias("Date")
             )
             # materialize or make physical the lazy frame
-            df_grouped = df_grouped.collect()
+            df_grouped = df_grouped.main()
             # create a csv file by writing the data frame
-            df_grouped.write_csv(pathlib.Path(f"{self.csv_name}_{time_frame}.csv"))
+            df_grouped.write_csv(pathlib.Path(f"csv_name_{time_frame}.csv"))
 
         # if it is a str, then call once but if it a list call as needed
         if isinstance(time_frame, str):
